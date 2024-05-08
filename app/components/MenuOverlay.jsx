@@ -5,7 +5,7 @@ const MenuOverlay = ({ links }) => {
   return (
     <ul className="flex flex-col py-4 items-center">
       {links.map((link, index) => (
-        <li>
+        <li key={index}>
           <NavLinks
             href={link.path}
             content={link.title}
