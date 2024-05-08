@@ -32,7 +32,7 @@ const Navbar = () => {
           Logo
         </Link>
         <div className="mobile-menu block md:hidden">
-          {navbarOpen ? (
+          {!navbarOpen ? (
             <button
               className="py-2 px-3 text-slate-200 hover:text-white rounded-sm border border-slate-20 hover:border-white"
               onClick={() => {
